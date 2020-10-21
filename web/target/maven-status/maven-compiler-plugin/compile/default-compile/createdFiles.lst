@@ -1,0 +1,3 @@
+com/artsgard/web/config/WebConfig.class
+com/artsgard/web/config/WebAppInitializer.class
+com/artsgard/web/controllers/ContactController.class

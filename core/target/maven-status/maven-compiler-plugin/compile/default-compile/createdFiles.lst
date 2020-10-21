@@ -1,0 +1,6 @@
+com/artsgard/core/repository/ContactRepository.class
+com/artsgard/core/utils/PropUtil.class
+com/artsgard/core/config/Main.class
+com/artsgard/core/utils/HibException.class
+com/artsgard/core/config/AppConfig.class
+com/artsgard/core/model/Contact.class
