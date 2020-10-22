@@ -30,12 +30,11 @@ public class Main {
 
         EntityManager em = entityManagerFactory.createEntityManager();
 
-        Contact contact = em.find(Contact.class, 1L);
+        Contact contact = em.find(Contact.class, 40L);
         List<Contact> contacts = em.createQuery("SELECT a FROM Contact a", Contact.class).getResultList();
 
         System.out.println(contact.getEmailAddress());
         
-
         for (Contact cnt : contacts) {
             System.out.println(cnt.getLastName());
         }

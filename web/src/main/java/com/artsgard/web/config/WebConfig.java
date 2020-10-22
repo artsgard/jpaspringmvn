@@ -23,7 +23,7 @@ import org.thymeleaf.templateresolver.TemplateResolver;
 @EnableWebMvc
 public class WebConfig extends WebMvcConfigurerAdapter {
 
-      @Bean
+    @Bean
     public TemplateResolver templateResolver() {
         TemplateResolver templateResolver = new ClassLoaderTemplateResolver();
         //templateResolver.setPrefix("/WEB-INF/templates/");
@@ -57,7 +57,7 @@ public class WebConfig extends WebMvcConfigurerAdapter {
         viewResolver.setOrder(1);
         return viewResolver;
     }
-    
+  /*  
     @Override
     public void configureDefaultServletHandling(DefaultServletHandlerConfigurer configurer) {
         configurer.enable();
@@ -77,5 +77,5 @@ public class WebConfig extends WebMvcConfigurerAdapter {
             ContentNegotiationConfigurer configurer) {
         configurer.defaultContentType(MediaType.TEXT_HTML);
     }
-
+*/
 }
