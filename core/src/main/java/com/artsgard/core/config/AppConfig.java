@@ -4,7 +4,6 @@ import com.mysql.jdbc.jdbc2.optional.MysqlDataSource;
 import javax.sql.DataSource;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
-import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.core.env.Environment;
 import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
@@ -15,14 +14,14 @@ import org.springframework.orm.jpa.vendor.HibernateJpaVendorAdapter;
 import org.springframework.transaction.PlatformTransactionManager;
 
 @Configuration
-@ComponentScan("com.artsgard.core")
-@EnableJpaRepositories(basePackages = "com.artsgard.core.repository")
+@EnableJpaRepositories(basePackages = "com.artsgard.core")
 public class AppConfig {
 
     @Autowired
     private Environment env;
 
-    public AppConfig() { }
+    public AppConfig() {
+    }
 
     @Bean
     public DataSource dataSource() {

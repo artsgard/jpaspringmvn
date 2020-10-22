@@ -45,3 +45,5 @@ testem.log
 .DS_Store
 Thumbs.db
 /nbproject/private/
+/core/target/
+/web/target/

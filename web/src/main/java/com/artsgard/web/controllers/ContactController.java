@@ -13,20 +13,20 @@ import com.artsgard.core.repository.ContactRepository;
 @RequestMapping("/")
 public class ContactController {
 
-    @Autowired
+    @Autowired 
     ContactRepository contactsRepo;
 
-    @RequestMapping(method = RequestMethod.GET)
-    public String home(Map<String, Object> model) throws Exception {
-        List<Contact> contacts = contactsRepo.findAll();
-        model.put("contacts", contacts);
-        return "home";
-    }
+    @RequestMapping(method=RequestMethod.GET)
+ 	public String home(Map<String,Object> model) throws Exception {
+  		List<Contact> contacts = contactsRepo.findAll();
+  		model.put("contacts", contacts);                
+  		return "home";
+	} 
 
-    @RequestMapping(method = RequestMethod.POST)
-    public String submit(Contact contact) throws Exception {
-        contactsRepo.save(contact);
-        return "redirect:/";
-    }
+	@RequestMapping(method=RequestMethod.POST)
+   		public String submit(Contact contact) throws Exception {
+    		Contact c = contactsRepo.save(contact);
+    		return "redirect:/";
+  	}
 
 }

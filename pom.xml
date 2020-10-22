@@ -8,8 +8,8 @@
     <name>jpa spring mvn</name>
     <description></description>
     <modules>
-        <module>web</module>
         <module>core</module>
+        <module>web</module>
     </modules>
     <properties>
         <maven.compiler.source>1.8</maven.compiler.source>

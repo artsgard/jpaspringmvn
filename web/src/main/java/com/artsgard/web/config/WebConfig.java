@@ -23,7 +23,7 @@ import org.thymeleaf.templateresolver.TemplateResolver;
 @EnableWebMvc
 public class WebConfig extends WebMvcConfigurerAdapter {
 
-    @Bean
+      @Bean
     public TemplateResolver templateResolver() {
         TemplateResolver templateResolver = new ClassLoaderTemplateResolver();
         //templateResolver.setPrefix("/WEB-INF/templates/");
